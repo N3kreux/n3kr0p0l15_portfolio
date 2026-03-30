@@ -7,7 +7,7 @@
 
 body {
     background: black;
-    color: #00ff00; /* neon green text */
+    color: #691010; /* neon green text */
     font-family: 'VT323', monospace; /* retro pixel font */
     overflow-x: hidden;
 }
@@ -16,14 +16,14 @@ body {
 header h1 {
     text-align: center;
     font-size: 3rem;
-    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+    text-shadow: 0 0 5px rgb(201, 191, 47), 0 0 10px rgb(201, 191, 47);
     animation: flicker 1.5s infinite;
 }
 
 header .subtitle {
     text-align: center;
-    color: #ff00ff;
-    text-shadow: 0 0 5px #ff00ff;
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff7171;
     animation: flicker 2s infinite;
 }
 
@@ -45,7 +45,7 @@ header .subtitle {
     width: 150px;
     height: 150px;
     background: rgba(255,255,255,0.05);
-    border: 1px solid #0f0;
+    border: 1px solid rgb(201, 191, 47);
     padding: 1rem;
     text-align: center;
     cursor: pointer;
@@ -54,7 +54,7 @@ header .subtitle {
 
 .project-tile:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px #0f0;
+    box-shadow: 0 0 20px rgb(201, 191, 47);
 }
 
 /* Terminal section */
@@ -63,14 +63,14 @@ header .subtitle {
     bottom: 0;
     width: 100%;
     background: rgba(0,0,0,0.9);
-    border-top: 1px solid #0f0;
+    border-top: 1px solid rgb(201, 191, 47);
     padding: 1rem;
 }
 
 #terminal-input {
     width: 100%;
     background: black;
-    color: #0f0;
+    color: rgb(201, 191, 47);
     border: none;
     font-family: 'VT323', monospace;
     font-size: 1rem;
