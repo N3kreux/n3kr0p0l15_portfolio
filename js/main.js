@@ -45,7 +45,7 @@ function draw() {
     ctx.fillStyle = 'rgba(0,0,0,0.1)'; // fade effect
     ctx.fillRect(0,0,canvas.width,canvas.height);
 
-    ctx.fillStyle = '#0f0'; // neon green
+    ctx.fillStyle = 'rgb(201, 191, 47)'; // Neon Yellow-Green
     ctx.font = '16px monospace';
 
     drops.forEach((y, i) => {
