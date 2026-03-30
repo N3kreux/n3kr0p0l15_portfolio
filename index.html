@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome To The N3KR0P0L15</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background container -->
+    <div id="background"></div>
 
+    <!-- Header / title -->
+    <header>
+        <h1>Welcome To The N3KR0P0L15!</h1>
+        <p class="subtitle">ENTER IF YOU DARE</p>
+    </header>
+
+    <!-- Navigation / Project Tiles -->
+    <main id="projects">
+        <!-- Example project tile -->
+        <div class="project-tile" data-project="project1">
+            <img src="assets/images/project_icon.png" alt="Project 1">
+            <p>Glitchy Terminal</p>
+        </div>
+        <div class="project-tile" data-project="project2">
+            <img src="assets/images/project_icon.png" alt="Project 2">
+            <p>ASCII Horror</p>
+        </div>
+        <!-- Add more projects here -->
+    </main>
+
+    <!-- Fake Terminal -->
+    <section id="terminal">
+        <p>&gt; <span id="terminal-output">Type "help" to explore.</span></p>
+        <input type="text" id="terminal-input" placeholder="Type command..." autocomplete="off">
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

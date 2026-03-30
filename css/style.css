@@ -1,0 +1,77 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: #00ff00; /* neon green text */
+    font-family: 'VT323', monospace; /* retro pixel font */
+    overflow-x: hidden;
+}
+
+/* Flickering header */
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+    animation: flicker 1.5s infinite;
+}
+
+header .subtitle {
+    text-align: center;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff;
+    animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+    20%, 22%, 24%, 55% { opacity: 0.4; }
+}
+
+/* Project Tiles */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.project-tile {
+    width: 150px;
+    height: 150px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #0f0;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-tile:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #0f0;
+}
+
+/* Terminal section */
+#terminal {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    border-top: 1px solid #0f0;
+    padding: 1rem;
+}
+
+#terminal-input {
+    width: 100%;
+    background: black;
+    color: #0f0;
+    border: none;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+}
