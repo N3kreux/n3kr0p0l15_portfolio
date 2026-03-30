@@ -5,10 +5,19 @@
     box-sizing: border-box;
 }
 
+.iosevka-charon-bold-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 body {
     background: black;
     color: #691010; /* neon green text */
-    font-family: 'VT323', monospace; /* retro pixel font */
+    font-family: "Iosevka Charon", monospace;
+  font-weight: 700;
+  font-style: italic;
     overflow-x: hidden;
 }
 
@@ -72,7 +81,9 @@ header .subtitle {
     background: black;
     color: rgb(201, 191, 47);
     border: none;
-    font-family: 'VT323', monospace;
+    font-family: "Iosevka Charon", monospace;
+  font-weight: 700;
+  font-style: italic;
     font-size: 1rem;
 }
 
