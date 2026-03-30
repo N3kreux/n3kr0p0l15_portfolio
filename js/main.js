@@ -16,7 +16,7 @@ terminalInput.addEventListener('keydown', (e) => {
             document.body.style.backgroundColor = '#0a0a0a';
         } else if (cmd === 'glitch') {
             terminalOutput.textContent = '!!! SYSTEM GLITCH !!!';
-            document.body.style.backgroundColor = '#ff00ff';
+            document.body.style.backgroundColor = '#76c3e7';
             setTimeout(() => document.body.style.backgroundColor = 'black', 500);
         } else {
             terminalOutput.textContent = 'Unknown command. Type "help".';
